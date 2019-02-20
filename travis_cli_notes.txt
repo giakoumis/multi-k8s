@@ -1,1 +1,5 @@
 docker run -it -v ${pwd}:/app ruby:2.3 sh
+gem install travis
+travis login
+copy json file
+travis encrypt-file service-account.json -r giakoumis/multi-k8s --org
